@@ -43,7 +43,7 @@ func main() {
 		if name == "" || image == "" || bundle_id == "" || ipa_file == "" || version == "" {
 			writer.WriteHeader(404)
 
-			writer.Write([]byte("Example: https://example.com/?name=App&image=https://example.com/image.png&bundle_id=com.example.app&file=filename.ipa&version=1.0.0&size=100"))
+			_, _ = writer.Write([]byte("Example: https://example.com/?name=App&image=https://example.com/image.png&bundle_id=com.example.app&file=filename.ipa&version=1.0.0&size=100"))
 			return
 		}
 
